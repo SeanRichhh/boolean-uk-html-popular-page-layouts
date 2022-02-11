@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template:
+  "header header header header" 60px
+  "inbox gmail settings right-sidebar" 1fr /
+  1fr 2.5fr 1fr 50px;
+    column-gap: 1rem;
+    row-gap: 1rem
+    ;
+}
+
+body> div{
+    text-align: center;
+
+}
+.header{
+    grid-area: header;
+    background-color:rgb(126, 115, 128)
+}
+.inbox{
+    grid-area: inbox;
+    background-color:rgb(176, 190, 189);
+}
+.gmail{
+    grid-area: gmail;
+    background-color:rgb(231, 233, 224);
+}
+.settings{
+    grid-area: settings;
+    background-color:rgb(197, 174, 174);
+}
+.right-sidebar{
+    grid-area: right-sidebar;
+    background-color:rgba(119, 114, 88, 0.308);
+}
