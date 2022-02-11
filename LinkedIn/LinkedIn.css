@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template:
+    ". header  header  header  ."60px
+    "empty-left left-profile    main  right-profile empty-right" 1fr /
+    1fr 1.5fr 2fr 1.5fr 1fr
+    ;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    
+}
+
+.header{
+    grid-area: header;
+    background: #71817C;
+    border-radius: 30px;
+}
+.main{
+    grid-area: main;
+    background: #768171;
+    border-radius: 30px;
+}
+.empty-left{
+    grid-area: empty-left;
+    
+}
+.empty-right{
+    grid-area: empty-right;
+   
+}
+.left-profile{
+    grid-area: left-profile;
+    background:#817471;
+    border-radius: 30px;
+
+}
+.right-profile{
+    grid-area: right-profile;
+    background:#817471;
+    border-radius: 30px;
+}
