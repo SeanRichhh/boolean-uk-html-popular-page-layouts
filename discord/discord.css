@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template:
+    "left-nav server-name header-right" 50px
+    "left-nav members right-body" 1fr
+    "left-nav profile right-body" 50px /
+    50px 200px 1fr;
+}
+.left-nav{
+    grid-area: left-nav ;
+    background: rgb(70, 65, 65);
+}
+.server-name{
+    grid-area: server-name;
+    background: rgb(36, 34, 34);
+}
+.header-right{
+    grid-area: header-right;
+    background: rgb(71, 71, 71);
+}
+.members{
+    grid-area: members;
+    background: rgb(97, 94, 94);
+}
+.profile{
+    grid-area: profile;
+    background: rgb(71, 67, 67);
+
+}
+.right-body{
+    grid-area: right-body;
+    background: rgb(167, 159, 159);
+
+}
